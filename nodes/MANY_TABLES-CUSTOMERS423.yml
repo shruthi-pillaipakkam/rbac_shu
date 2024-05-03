@@ -1,0 +1,155 @@
+fileVersion: 1
+id: 30939912-e306-4a2c-affb-ecad321fd163
+name: CUSTOMERS423
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: MANY_TABLES
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3575643a-b06d-4a1a-a2fa-1940eeedb648
+          stepCounter: 30939912-e306-4a2c-affb-ecad321fd163
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: C_CUSTKEY
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e861ddc-582f-4ca1-a5cf-c36e703d5b98
+          stepCounter: 30939912-e306-4a2c-affb-ecad321fd163
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_FIRSTNAME
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 324d2dfd-c847-4f83-b575-05b51da25c8c
+          stepCounter: 30939912-e306-4a2c-affb-ecad321fd163
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_LASTNAME
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1842703-6e65-4bbf-a375-9ebccfa5ccf4
+          stepCounter: 30939912-e306-4a2c-affb-ecad321fd163
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_ADDRESS
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5bbff144-a328-4b8f-bc24-8ad18b678fb3
+          stepCounter: 30939912-e306-4a2c-affb-ecad321fd163
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: C_NATIONKEY
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6df2f59-ec50-4703-b765-cefeab56d812
+          stepCounter: 30939912-e306-4a2c-affb-ecad321fd163
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_PHONE
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f04ad262-84ea-4902-aec9-b73976781551
+          stepCounter: 30939912-e306-4a2c-affb-ecad321fd163
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        name: C_ACCTBAL
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2aac08f-7381-4190-b568-a3d0516bbcc3
+          stepCounter: 30939912-e306-4a2c-affb-ecad321fd163
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_MKTSEGMENT
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e68c485b-0ab9-4605-a618-45204e92595e
+          stepCounter: 30939912-e306-4a2c-affb-ecad321fd163
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: C_COMMENT
+        nullable: true
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('MANY_TABLES', 'CUSTOMERS423') }}
+  name: CUSTOMERS423
+  schema: ""
+  sqlType: Source
+  table: CUSTOMERS423
+  type: sourceInput
+  version: 1
+type: Node

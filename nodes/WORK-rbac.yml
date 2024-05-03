@@ -1,0 +1,95 @@
+fileVersion: 1
+id: 7a27c85e-b418-458c-82a5-a7c981080850
+name: rbac
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48637629-4aad-4792-a1c6-700989f08075
+          stepCounter: 7a27c85e-b418-458c-82a5-a7c981080850
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: N_NATIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 420ba8c7-7741-48ec-880d-e3803b04ddbe
+                stepCounter: dcb090b4-f8bc-46ee-9725-6dda610b26c9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d455fdd-0ad0-4d2b-bf33-e83b092e37f9
+          stepCounter: 7a27c85e-b418-458c-82a5-a7c981080850
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: N_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 25609b2d-8c17-4ccb-b6a7-7c57b2861f8a
+                stepCounter: dcb090b4-f8bc-46ee-9725-6dda610b26c9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e038b224-0d66-4124-9ed3-ffcb370ab4b1
+          stepCounter: 7a27c85e-b418-458c-82a5-a7c981080850
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: N_REGIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 54cd5bb5-16f0-4c6c-8d85-ca157c63c6bf
+                stepCounter: dcb090b4-f8bc-46ee-9725-6dda610b26c9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 68cd5dc8-24e7-47cc-8ed4-7d49992e42a5
+          stepCounter: 7a27c85e-b418-458c-82a5-a7c981080850
+        config: {}
+        dataType: VARCHAR(152)
+        description: ""
+        name: N_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8bb6555e-909a-4efe-b590-e10ac91a5fd5
+                stepCounter: dcb090b4-f8bc-46ee-9725-6dda610b26c9
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: STG_NATION
+        join:
+          joinCondition: FROM {{ ref('WORK', 'STG_NATION') }} "STG_NATION"
+        name: rbac
+        noLinkRefs: []
+  name: rbac
+  overrideSQL: false
+  schema: ""
+  sqlType: testing-rbac:::1
+  type: sql
+  version: 1
+type: Node

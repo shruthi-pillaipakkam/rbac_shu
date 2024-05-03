@@ -1,0 +1,13 @@
+config:
+  entities:
+    nodeTypes:
+      "1":
+        defaultStorageLocation: null
+        isDisabled: false
+  packageVariables: ""
+fileVersion: 1
+id: "@coalesce/shruthi-test"
+name: testing-rbac
+packageID: "@coalesce/shruthi-test"
+releaseID: fdd31fc5-6d9d-470b-bdc6-15cbe70ee836
+type: Package
